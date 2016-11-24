@@ -1,7 +1,6 @@
 package br.com.marcelosantos.padroesdeprojeto;
 
 public class CalculadorDeImposto {
-		
 	
 	public void realizaCalculo(Orcamento orcamento, Imposto imposto){
 		double valor = imposto.calcula(orcamento);
