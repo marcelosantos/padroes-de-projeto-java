@@ -8,14 +8,4 @@ public class CalculadorDeImposto {
 		System.out.println(valor);		
 	}	
 	
-	/*public void realizaCalculoICMS(Orcamento orcamento, String imposto){
-		double icms = new ICMS().calculaICMS(orcamento);
-		System.out.println(icms);		
-	}
-	
-	public void realizaCalculoISS(Orcamento orcamento, String imposto){
-		double iss = new ISS().calculaISS(orcamento);
-		System.out.println(iss);
-	}*/
-	
 }
