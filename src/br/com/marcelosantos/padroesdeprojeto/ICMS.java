@@ -1,10 +1,16 @@
 package br.com.marcelosantos.padroesdeprojeto;
 
-public class ICMS implements Imposto{
+public class ICMS extends Imposto{
+	
+	public ICMS(Imposto outroImposto){
+		super(outroImposto);
+	}
+	
+	public ICMS(){}
 	
 	@Override
 	public double calcula(Orcamento orcamento) {
-		return orcamento.getValor() * 0.1;
+		return orcamento.getValor() * 0.1 + calculaComOutroImposto(orcamento);
 	}
 	
 }

@@ -1,13 +1,13 @@
 package br.com.marcelosantos.padroesdeprojeto;
 
-public abstract class TemplateDeImpostoCondicional implements Imposto{
+public abstract class TemplateDeImpostoCondicional extends Imposto{
 
 	@Override
 	public double calcula(Orcamento orcamento) {
 		if(deveMaxTaxacao(orcamento)){
-			return maxTaxacao(orcamento);
+			return maxTaxacao(orcamento) + calculaComOutroImposto(orcamento);
 		}else{
-			return minTaxacao(orcamento);
+			return minTaxacao(orcamento) + calculaComOutroImposto(orcamento);
 		}
 	}
 
