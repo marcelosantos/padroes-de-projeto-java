@@ -3,3 +3,7 @@
 ## Strategy
 
 ## Chain Of Responsibility
+
+## Template Method
+
+## Decorator
